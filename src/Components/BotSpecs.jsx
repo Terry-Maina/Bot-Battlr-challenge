@@ -38,4 +38,14 @@ const botTypeClasses = {
                   <div className="column">
                     <i className="icon large circular yellow lightning" />
                     <strong>{bot.damage}</strong>
-                    
+                    </div>
+                  <div className="column">
+                    <i className="icon large circular blue shield" />
+                    <strong>{bot.armor}</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button className="ui button fluid" onClick={() => console.log("connect this to a function that shows all bots")}>
+              Go Back
+            </button>
