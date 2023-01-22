@@ -26,4 +26,13 @@ function BotCard({ bot, clickHandler, handleDelete }) {
               <small>{bot.catchphrase.substring(0, 32)}</small>
             </div>
           </div>
-          
+          <div className="extra content">
+          <span>
+            <i className="icon heartbeat" />
+            {bot.health}
+          </span>
+
+          <span>
+            <i className="icon lightning" />
+            {bot.damage}
+          </span>
