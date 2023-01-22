@@ -36,3 +36,28 @@ function BotCard({ bot, clickHandler, handleDelete }) {
             <i className="icon lightning" />
             {bot.damage}
           </span>
+          <span>
+            <i className="icon shield" />
+            {bot.armor}
+          </span>
+          <span>
+            <div className="ui center aligned segment basic">
+              <button
+                title="Delete this bot"
+                className="ui mini red button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleDelete(bot);
+                }}
+              >
+                x
+              </button>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default BotCard;
